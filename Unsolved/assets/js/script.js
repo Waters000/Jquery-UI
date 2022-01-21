@@ -1,3 +1,4 @@
+// adding ID into the DOM
 var formEl = $('#skills-form');
 var nameInputEl = $('#skill-name');
 var dateInputEl = $('#datepicker');
@@ -11,9 +12,10 @@ var printSkills = function(name, date) {
   listEl.appendTo(skillsListEl);
 };
 
+// handeling the form submit, no empty entries and revert form to blank
 var handleFormSubmit = function(event) {
   event.preventDefault();
-
+//name input var with value from user.
   var nameInput = nameInputEl.val();
   var dateInput = dateInputEl.val();
 
